@@ -6,11 +6,16 @@ import Primeiro from './components/basics/First'
 import Parametros from './components/basics/Parameters'
 import Fragment from './components/basics/Fragment'
 import Random from './components/basics/Random'
+import Family from './components/basics/Family'
 
 export default () => {
   return (
     <div className='app'>
       <div className='cards'>
+
+        <Card titulo='Numero aleatorio' color='#279'>
+          <Family family='Silva'/>
+        </Card>
 
         <Card titulo='Numero aleatorio' color='#080'>
           <Random min={1} max={10} />
@@ -24,7 +29,7 @@ export default () => {
           <Parametros titulo='React app' subtitulo='Projeto de testes' />
         </Card>
 
-        <Card titulo='Fragmento' color ='#625'>
+        <Card titulo='Fragmento' color='#625'>
           <Fragment />
         </Card>
       </div>
