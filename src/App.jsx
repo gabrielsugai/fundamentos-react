@@ -1,4 +1,5 @@
 import React from 'react'
+import './App.css'
 
 import Card from './components/layout/Card'
 import Primeiro from './components/basics/First'
@@ -8,22 +9,25 @@ import Random from './components/basics/Random'
 
 export default () => {
   return (
-    <div>
-      <Card titulo='Numero aleatorio'>
-        <Random min={1} max={10} />
-      </Card>
+    <div className='app'>
+      <div className='cards'>
 
-      <Card titulo='Primeiro componente'>
+        <Card titulo='Numero aleatorio'>
+          <Random min={1} max={10} />
+        </Card>
+
+        <Card titulo='Primeiro componente'>
           <Primeiro></Primeiro>
-      </Card>
+        </Card>
 
-      <Card titulo='Componente com parametros'>
-        <Parametros titulo='React app' subtitulo='Projeto de testes' />
-      </Card>
+        <Card titulo='Componente com parametros'>
+          <Parametros titulo='React app' subtitulo='Projeto de testes' />
+        </Card>
 
-      <Card titulo='Fragmento'>
-        <Fragment />
-      </Card>
+        <Card titulo='Fragmento'>
+          <Fragment />
+        </Card>
+      </div>
     </div>
   )
 }
