@@ -12,19 +12,19 @@ export default () => {
     <div className='app'>
       <div className='cards'>
 
-        <Card titulo='Numero aleatorio'>
+        <Card titulo='Numero aleatorio' color='#080'>
           <Random min={1} max={10} />
         </Card>
 
-        <Card titulo='Primeiro componente'>
+        <Card titulo='Primeiro componente' color='#4fd'>
           <Primeiro></Primeiro>
         </Card>
 
-        <Card titulo='Componente com parametros'>
+        <Card titulo='Componente com parametros' color='#435'>
           <Parametros titulo='React app' subtitulo='Projeto de testes' />
         </Card>
 
-        <Card titulo='Fragmento'>
+        <Card titulo='Fragmento' color ='#625'>
           <Fragment />
         </Card>
       </div>
