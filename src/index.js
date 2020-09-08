@@ -2,5 +2,8 @@ import './index.css'
 import ReactDOM from 'react-dom'
 import React from 'react'
 
-const string = 'Olá Mundo!'
-ReactDOM.render(<div> { string } </div>, document.getElementById('root'))
+import Primeiro from './components/basics/First'
+
+ReactDOM.render(<div> 
+                    <Primeiro></Primeiro>
+                </div>, document.getElementById('root'))
