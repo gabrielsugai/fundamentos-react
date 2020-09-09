@@ -10,14 +10,19 @@ import Family from './components/basics/Family'
 import FamilyMember from './components/basics/FamilyMember'
 import StudentList from './components/repetition/StudentList'
 import FruitsTable from './components/repetition/FruitsTable'
+import OddOrEven from './components/condicional/OddOrEven'
 
 export default () => {
   return (
     <div className='app'>
       <div className='cards'>
 
+        <Card titulo='Renderização Condicional' color='#529'>
+          <OddOrEven number={20}/>
+        </Card>
+
         <Card titulo='Repetição Tabela' color='#529'>
-          <FruitsTable/>
+          <FruitsTable />
         </Card>
 
         <Card titulo='Repetição' color='#979'>
