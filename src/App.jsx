@@ -11,6 +11,7 @@ import FamilyMember from './components/basics/FamilyMember'
 import StudentList from './components/repetition/StudentList'
 import FruitsTable from './components/repetition/FruitsTable'
 import OddOrEven from './components/condicional/OddOrEven'
+import UserInfo from './components/condicional/UserInfo'
 
 export default () => {
   return (
@@ -19,6 +20,8 @@ export default () => {
 
         <Card titulo='Renderização Condicional' color='#529'>
           <OddOrEven number={20}/>
+          <UserInfo user={{name: 'Gabriel'}} />
+          <UserInfo/>
         </Card>
 
         <Card titulo='Repetição Tabela' color='#529'>
