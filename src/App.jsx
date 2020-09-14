@@ -13,11 +13,16 @@ import FruitsTable from './components/repetition/FruitsTable'
 import OddOrEven from './components/condicional/OddOrEven'
 import UserInfo from './components/condicional/UserInfo'
 import IndirectFather from './components/communication/IndirectFather'
+import Input from './components/form/Input'
 
 export default () => {
   return (
     <div className='app'>
       <div className='cards'>
+
+        <Card titulo='Componente controlado' color='#E45F56'>
+          <Input />
+        </Card>
 
         <Card titulo='Comunicação indireta' color='#529'>
           <IndirectFather />
