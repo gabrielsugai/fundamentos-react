@@ -14,11 +14,16 @@ import OddOrEven from './components/condicional/OddOrEven'
 import UserInfo from './components/condicional/UserInfo'
 import IndirectFather from './components/communication/IndirectFather'
 import Input from './components/form/Input'
+import Contador from './components/contador/Contador'
 
 export default () => {
   return (
     <div className='app'>
       <div className='cards'>
+
+      <Card titulo='Contador' color='#E54F65'>
+          <Contador initialNumber={10} initialStep={5}/>
+        </Card>
 
         <Card titulo='Componente controlado' color='#E45F56'>
           <Input />
